@@ -30,8 +30,8 @@ test('Google test2', async({page}) =>{
  // Validate title
  await expect(page).toHaveTitle(' Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial')
  
-})*/
-
+})
+*/
 test("API Test1", async ({ request}) => {
   // create post api request using playwright
   const postAPIResponse = await request.post("https://restful-booker.herokuapp.com/booking", {
@@ -97,8 +97,8 @@ test("API Test3", async ({ request}) => {
   expect(postAPIResponse.ok()).toBeTruthy();
   expect(postAPIResponse.status()).toBe(200);
 });
-/*
-test("API Test4", async ({ request}) => {
+
+/*test("API Test4", async ({ request}) => {
   // create post api request using playwright
   const postAPIResponse = await request.post("https://restful-booker.herokuapp.com/booking", {
     data: {
@@ -113,9 +113,9 @@ test("API Test4", async ({ request}) => {
       additionalneeds: "super bowls",
     },
   });
-*/
+
   // validate status code
   console.log(await postAPIResponse.json());
   expect(postAPIResponse.ok()).toBeTruthy();
   expect(postAPIResponse.status()).toBe(201);
-});
+});*/
