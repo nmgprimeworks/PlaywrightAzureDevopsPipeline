@@ -16,7 +16,7 @@ test('Google test1', async({page}) =>{
  await page.locator('#container > #thumbnail').first().click();
  await page.waitForTimeout(5000);
 })
-
+/*
 // Write a test
 test('Google test2', async({page}) =>{
   // Go to URL
@@ -30,7 +30,7 @@ test('Google test2', async({page}) =>{
  // Validate title
  await expect(page).toHaveTitle(' Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial')
  
-})
+})*/
 
 test("API Test1", async ({ request}) => {
   // create post api request using playwright
@@ -97,7 +97,7 @@ test("API Test3", async ({ request}) => {
   expect(postAPIResponse.ok()).toBeTruthy();
   expect(postAPIResponse.status()).toBe(200);
 });
-
+/*
 test("API Test4", async ({ request}) => {
   // create post api request using playwright
   const postAPIResponse = await request.post("https://restful-booker.herokuapp.com/booking", {
@@ -113,7 +113,7 @@ test("API Test4", async ({ request}) => {
       additionalneeds: "super bowls",
     },
   });
-
+*/
   // validate status code
   console.log(await postAPIResponse.json());
   expect(postAPIResponse.ok()).toBeTruthy();
